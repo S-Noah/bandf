@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This sentence will appear under the link in search engine results.">
+	<meta name="keywords" content="list,of,words,separated,by,commas,that,describe,your,site">
+	<meta name="author" content="Your name goes here">
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- shiv which should be a shim -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- tab title -->
+	<title>Discography | Logic</title>
+
+	<!-- favicon link -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+	<link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
+
+    <!-- slicknav -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>   <!-- Link to jQuery Content Delivery Network - Necessary for SlickNav to work correctly -->
+    <script src="js/jquery.slicknav.min.js"></script>                     <!-- Link to the slicknav file inside the js folder - Necessary for SlickNav to work correctly -->
+
+	<!-- slicknav javascript - this javascript code will use the UL inside the nav_menu tag to build the same menu in slickNav format -->
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('.nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    </script>
+
+</head>
+
+
+<body>
+
+	<header class="clearfix">
+		<a href="index.html"><img src=images/logiclogo.jpg></a>
+		<h1><a href="index.html">Logic</a></h1>
+	</header>
+
+    <nav id="mobilemenu"></nav>
+	<nav class="nav_menu">
+    	<ul>
+        	<li><a href="discography.html">Discography</a></li>
+        	<li><a href="videos.html">Videos</a></li>
+        	<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="maillist.html">Mailing List</a></li>
+			
+    	</ul>
+	</nav>
+
+	<section id="discography">
+
+		<div class="album">
+			<h1>No Pressure</h3>
+			<img src="images/logic5.jpg" alt="No Pressure">
+			<ul>
+				<li>1. No Pressure</li>
+				<li>2. Hit my Line</li>
+				<li>3. GP4</li>
+				<li>4. Celebration</li>
+				<li>5. Open Mic</li>
+				<li>6. Soul Food II</li>
+				<li>7. Perfect</li>
+				<li>8. Man I Is</li>
+				<li>9. Dadbod</li>
+				<li>10. 5 Hooks</li>
+				<li>11. Dark Place</li>
+				<li>12. A2Z</li>
+				<li>13. Heard Em Say</li>
+				<li>14. Amen</li>
+				<li>15. Obediently Yours</li>
+			</ul>
+		</div>
+
+		<div class="album">
+			<h1>Everybody</h3>
+			<img src="images/everybody.jpg" alt="Everybody">
+			<ul>
+				<li>1. Halleujah</li>
+				<li>2. Everybody</li>
+				<li>3. Confess</li>
+				<li>4. Killing Spree</li>
+				<li>5. Take it Back</li>
+				<li>6. American</li>
+				<li>7. Ink Blot</li>
+				<li>8. Mos Definently</li>
+				<li>9. Waiting Room</li>
+				<li>10. 1-800-273-8255</li>
+				<li>11. Anziety</li>
+				<li>12. Black Spiderman</li>
+				<li>13. AfricAryaN</li>
+			</ul>
+		</div>
+
+		<div class="album">
+			<h1>Bobby Tarantino</h3>
+			<img src="images/bobbyt.jpg" alt="No Pressure">
+			<ul>
+				<li>1. Illuminatro</li>
+				<li>2. Flexicution</li>
+				<li>3. The Jam</li>
+				<li>4. Slave II</li>
+				<li>5. A Word From Our Sponsor</li>
+				<li>6. Wrist</li>
+				<li>7. Super Mario World</li>
+				<li>8. Studio Ambience at Night</li>
+				<li>9. 44 Bars</li>
+				<li>10. Slave</li>
+				<li>11. Deeper Than Money</li>
+			</ul>
+		</div>
+
+
+	</section>
+
+	<div><button onclick="topFunction()" id="cornerBtn" title="Go to top">Return To Top</button></div>
+		<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+		document.getElementById("cornerBtn").style.display = "block";
+	  } else {
+		document.getElementById("cornerBtn").style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+
+	<script>
+		window.onload = function() {
+			var d = new Date();
+			document.getElementById("copyright").innerHTML = d.getFullYear();
+		}
+	</script>
+
+	<footer>
+		<p>&copy; <span id="copyright"></span> Sarge Studios</p>
+	</footer>
+
+</body>
+</html>
